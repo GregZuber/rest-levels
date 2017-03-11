@@ -1,0 +1,25 @@
+[
+  //CREATE:
+
+{
+  "firstName": "Grzegorz",
+  "lastName": "Zuber"
+}
+
+,
+
+
+{
+  "id": "1",
+  "firstName": "Greg",
+  "lastName": "Zuber"
+}
+
+,
+
+{
+  "id": "1"
+}
+
+
+]
