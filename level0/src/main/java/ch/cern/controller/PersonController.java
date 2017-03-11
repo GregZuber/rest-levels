@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @RestController
@@ -28,11 +29,15 @@ public class PersonController {
     if (action.equals("READ")){
       return (List<Person>) personRepository.findAll();
     } else if (action.equals("CREATE") || action.equals("UPDATE")){
-      personRepository.save(personRequest.getPerson());
+      Person person = personRepository.save(personRequest.getPerson());
+      LinkedList<Person> persons = new LinkedList<>();
+      persons.add(person);
+      return persons;
     } else if (action.equals("DELETE")){
       personRepository.delete(personRequest.getPerson());
     }
 
     return null;
   }
+
 }
