@@ -1,0 +1,37 @@
+[
+{
+  "action": "READ"
+}
+
+,
+
+{
+  "action": "CREATE",
+  "person": {
+    "firstName": "Grzegorz",
+    "lastName": "Zuber"
+  }
+}
+
+,
+
+{
+  "action": "UPDATE",
+  "person": {
+    "id": "1",
+    "firstName": "Greg",
+    "lastName": "Zuber"
+  }
+}
+
+,
+
+{
+  "action": "DELETE",
+  "person": {
+    "id": "1"
+  }
+}
+
+
+]
